@@ -1,0 +1,324 @@
+<html>
+
+<head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.shareicon.net/data/2015/09/18/642535_logo_512x512.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <!-- Style Embedded-->
+    <style>
+        /* General Styles */
+        .container {
+            width: 78%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Rubik', 'sans-serif';
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            border: 0;
+            padding: 13px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Roboto';
+            color: #777777;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+    <!-- Javascript File -->
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Ahmed Alashi</h1>
+                </a>
+            </div> <!-- ./logo -->
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a href="quiz.html" class="line active">
+                        <i class="fa fa-question-circle fa-lg"></i>&nbsp;  Quiz Page
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;Home</a></li>
+                            <li><a href="cv.html"><i class="fa fa-wpforms fa-lg"></i>&nbsp;&nbsp;Cv-Form</a></li>
+                            <li><a href="code.html"><i class="fa fa-code fa-lg"></i>&nbsp; &nbsp;Code</a></li>
+                            <li><a href="media.html"><i class="fa fa-picture-o fa-lg"></i>&nbsp;&nbsp;Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- ./container -->
+    </header> <!-- /header -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- About Me Section -->
+    <section class="about-me">
+        <div class="container">
+            <div class="about-me-box">
+                <div class="about-me-content">
+                    <h2>Quiz Page</h2>
+                    <ul class="breadcrumb" style="    padding: 15px 88px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Quiz Page</li>
+                    </ul> <!-- ./breadcrumb-->
+                </div> <!-- ./about-me-content -->
+            </div> <!-- ./about-me-box -->
+        </div> <!-- ./container -->
+    </section> <!-- ./about-me -->
+    <!-- Quiz Section -->
+    <section class="quiz" style="padding-bottom: 160px;">
+        <div class="container">
+            <div class="quiz-content">
+                <h2>This is the quiz of the course</h2>
+                <ul class="navbar">
+                    <li><a href="#pinfo">Personal Login</a></li>
+                    <li><a href="#firstgroup">First Group</a></li>
+                    <li><a href="#secondgroup">Second Group</a></li>
+                    <li><a href="#thirdgroup">Third Group</a></li>
+                    <li><a href="#fourthgroup">Fourth Group</a></li>
+                </ul>
+                <span id="wlm"></span>
+                <form action="javascript:answerExtract()" method="post" onreset="enable()">
+                    <div id="pinfo">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <p><input type="text" placeholder="Enter Your Name" id="name" required>
+                            </p>
+                            <p><input type="email" placeholder="Enter Email Address" id="email" required>
+                            </p>
+                            <!-- <p><input type="text" placeholder="Select Your Birth month" id="bmonth" list="months"
+                                    required>
+                                <datalist id="months">
+                                    <option value="1"></option>
+                                    <option value="2"></option>
+                                    <option value="3"></option>
+                                    <option value="4"></option>
+                                    <option value="5"></option>
+                                    <option value="6"></option>
+                                    <option value="7"></option>
+                                    <option value="8"></option>
+                                    <option value="9"></option>
+                                    <option value="10"></option>
+                                    <option value="11"></option>
+                                    <option value="12"></option>
+                                </datalist></p> -->
+                            <p><input type="tel" placeholder="Phone : 059/6-2195-200" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" id="phone" required></p>
+                            <p><input type="text" placeholder="Enter Your ID" id="identify" required></p>
+                        </fieldset>
+                    </div> <!-- #/pinfo -->
+                    <div id="firstgroup">
+                        <fieldset>
+                            <legend>First Group</legend>
+                            <h4>Select The Right Answer :</h4>
+                            <ol type="A">
+                                <li id="pa">
+                                    IUG Abbrevation of <span id="aLabel"></span><br>
+                                    <input type="radio" id="pr-a1" name="answer1" value="ius" onclick="disable('pa')">
+                                    <label>Islamic United School of Gaza</label>
+                                    <input type="radio" id="pr-a2" name="answer1" value="iug" onclick="disable('pa')">
+                                    <label>Islamic University of Gaza</label>
+                                    <input type="radio" id="pr-a3" name="answer1" value="none" onclick="disable('pa')">
+                                    <label>None of the above</label>
+                                </li>
+                                <li id="pb">
+                                    SDEV Abbrevation of <span id="bLabel"></span><br>
+                                    <input type="radio" id="pr-b1" name="answer2" value="syd" onclick="disable('pb')">
+                                    <label>System Development</label>
+                                    <input type="radio" id="pr-b2" name="answer2" value="sod" onclick="disable('pb')">
+                                    <label>Software Development</label>
+                                    <input type="radio" id="pr-b3" name="answer2" value="none" onclick="disable('pb')">
+                                    <label>None of the above</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div> <!-- #/firstgroup-->
+                    <div id="secondgroup">
+                        <fieldset>
+                            <legend>Second Group</legend>
+                            <h4>Select The Right Answers :</h4>
+                            <ol type="A">
+                                <li id="pc">
+                                    5*2 = <span id="cLabel"></span><br>
+                                    <input type="radio" id="pr-c1" name="answer3" onclick="disable('pc')">
+                                    <label>5+5</label>
+                                    <input type="radio" id="pr-c2" name="answer3" onclick="disable('pc')">
+                                    <label>2+2+2+2+2</label>
+                                    <input type="radio" id="pr-c3" name="answer3" onclick="disable('pc')">
+                                    <label>all of the above</label>
+                                    <input type="radio" id="pr-c4" name="answer3" onclick="disable('pc')">
+                                    <label>None of the above</label>
+                                </li>
+                                <li id="pd">
+                                    6/18 = <span id="dLabel"></span><br>
+                                    <input type="radio" id="pr-d1" name="answer4" onclick="disable('pd')">
+                                    <label>3/6</label>
+                                    <input type="radio" id="pr-d2" name="answer4" onclick="disable('pd')">
+                                    <label>2/6</label>
+                                    <input type="radio" id="pr-d3" name="answer4" onclick="disable('pd')">
+                                    <label>all of the above</label>
+                                    <input type="radio" id="pr-d4" name="answer4" onclick="disable('pd')">
+                                    <label>None of the above</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div> <!-- #/secondgroup -->
+                    <div id="thirdgroup">
+                        <fieldset>
+                            <legend>Third Group</legend>
+                            <h4>Select The Right Answer :</h4>
+                            <ol type="A">
+                                <li id="pe">
+                                    The Max value for 3 bits in binary = 
+                                    <select name="binary" id="binary" size="2"> 
+                                        <option value="--" selected>--</option>
+                                        <option value="0" id="pr-e1" onclick="disable('pe')">0</option>
+                                        <option value="1" id="pr-e2" onclick="disable('pe')">1</option>
+                                        <option value="2" id="pr-e3" onclick="disable('pe')">2</option>
+                                        <option value="3" id="pr-e4" onclick="disable('pe')">3</option>
+                                        <option value="4" id="pr-e5" onclick="disable('pe')">4</option>
+                                        <option value="5" id="pr-e6" onclick="disable('pe')">5</option>
+                                        <option value="6" id="pr-e7" onclick="disable('pe')">6</option>
+                                        <option value="7" id="pr-e8" onclick="disable('pe')">7</option>
+                                    </select>
+                                    <span id="eLabel"></span>
+                                </li>
+                                <li id="pf">
+                                    This Semester ID is =
+                                    <select name="semester" id="semester" size="2">
+                                        <option value="20200" selected onclick="disable('pf')">20200</option>
+                                        <option value="20201" onclick="disable('pf')">20201</option>
+                                        <option value="20202" onclick="disable('pf')">20202</option>
+                                        <option value="20203" onclick="disable('pf')">20203</option>
+                                        <option value="20204" onclick="disable('pf')">20204</option>
+                                    </select>
+                                    <span id="fLabel"></span>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div> <!-- #/thirdgroup -->
+                    <div id="fourthgroup">
+                        <fieldset>
+                            <legend>Fourth Group</legend>
+                            <h4>Select The Right Answer :</h4>
+                            <ol type="A">
+                                <li>
+                                    What is a pseudo-class and psuedo-element ? <span id="gLabel"></span><br> <br>
+                                    <textarea name="firstQuestion" id="fQuestion" cols="60" rows="10"
+                                        placeholder="Enter The Answer">pseudo-class is used to define a special state of an element while pseudo-element is used to style specified parts of an element.</textarea>
+                                </li>
+                                <li>
+                                    What is the difference between ID and Class selector ? <span id="hLabel"></span><br> <br>
+                                    <textarea name="secondQuestion" id="sQuestion" cols="60" rows="10"
+                                        placeholder="Enter The Answer">a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”).</textarea>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </div> <!-- #/fourthgroup -->
+                    <p>
+                        <button type="submit" class="fill">Submit</button>
+                        <button type="reset" class="border">Clear</button>
+                    </p>
+                </form>
+            </div> <!-- ./quiz-content -->
+        </div> <!-- ./container -->
+    </section> <!-- ./quiz -->
+
+    <!-- Footer Section -->
+    <footer class="footer" style="padding-bottom: 80px;">
+        <div class="container">
+            <div class="contact-info">
+                <h3><i class="fa fa-address-book fa-lg"></i>&nbsp;&nbsp;&nbsp;Contact Me</h3>
+                <div class="contact-item">
+                    <i class="icon fa fa-home"></i>
+                    <strong>Gaza Strip, Palestine</strong>
+                    <p>Tal El-hawa Towers</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="tel:970-592-195200"><i class="icon fa fa-phone"></i></a>
+                    <a href="tel:+970-592-195200"><strong>+970-592-195200</strong></a>
+                    <p>Monday to Friday 9:AM to 6:PM</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="mailto:ahmedalasher22@gmail.com" target="_blank"><i class="icon fa fa-envelope"></i>
+                    </a>
+                    <a href="mailto:ahmedalasher22@gmail.com"
+                        target="_blank"><strong>ahmedalasher22@gmail.com</strong></a>
+                    <p>Send Me Your Query Anytime <i class="fa fa-smile-o"></i> !</p>
+                </div> <!-- ./contact-item -->
+            </div> <!-- ./contact-info -->
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Ahmed Alashi</h1>
+                    </a>
+                    <h4>follow me</h4>
+                </div> <!-- ./logo -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AHmEDAlAsHiii/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/ahmed_alashii" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ahmed_alashii/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/ahmedalashii" target="_blank"><i class="fa fa-github"></i></a>
+                </div> <!-- ./footer-social -->
+                <p>Copyright ©2020 All rights reserved | This Page is made with <i class="fa fa-heart"></i> by <a
+                        href="https://www.instagram.com/ahmed_alashii/" style="color: #854fee;" target="_blank">Ahmed
+                        Alashi</a></p>
+            </div> <!-- ./footer-content -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->
+</body>
+
+</html>

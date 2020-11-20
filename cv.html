@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>CV-FORM</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.shareicon.net/data/2015/09/18/642535_logo_512x512.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <!-- Style Embedded-->
+    <style>
+        /* General Styles */
+        .container {
+            width: 78%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Rubik', 'sans-serif';
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            border: 0;
+            padding: 13px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Roboto';
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Ahmed Alashi</h1>
+                </a>
+            </div> <!-- ./logo -->
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a href="cv.html" class="line active">
+                        <i class="fa fa-wpforms fa-lg"></i>&nbsp;  CV-Form
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;Home</a></li>
+                            <li><a href="code.html"><i class="fa fa-code fa-lg"></i>&nbsp; &nbsp;Code</a></li>
+                            <li><a href="quiz.html"><i class="fa fa-question-circle fa-lg"></i>&nbsp; &nbsp;Quiz</a></li>
+                            <li><a href="media.html"><i class="fa fa-picture-o fa-lg"></i>&nbsp;&nbsp;Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- ./container -->
+    </header> <!-- /header -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- About Me Section -->
+    <section class="about-me">
+        <div class="container">
+            <div class="about-me-box">
+                <div class="about-me-content">
+                    <h2>CV Form</h2>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Cv Form</li>
+                    </ul> <!-- ./breadcrumb-->
+                </div> <!-- ./about-me-content -->
+            </div> <!-- ./about-me-box -->
+        </div> <!-- ./container -->
+    </section> <!-- ./about-me -->
+
+    <section class="contact" style="padding-bottom: 160px;">
+        <div class="container">
+            <div class="contact-content">
+                <h3>Please Enter Your Personal Information</h3>
+                <form action="" method="post">
+                    <div class="form-inputs">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        <input type="text" name="id" id="id" placeholder="Enter Your ID" required>
+                        <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                        <input type="text" name="department" id="department" placeholder="Enter Your Department">
+                    </div> <!-- ./form-inputs -->
+                    <div class="form-inputs">
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+                            placeholder="Enter Your Phone (059/6-2195-200)" required>
+                        <input type="text" name="address" id="address" placeholder="Enter Address">
+                        <input type="text" name="uni" id="uni" placeholder="Enter Your University" required>
+                        <input type="text" name="city" id="city" placeholder="Where are You From ?">
+                    </div> <!-- ./form-inputs -->
+                    <div class="buttons">
+                        <button type="submit" class="fill">Submit</button>
+                        <button type="reset" class="border">Clear</button>
+                    </div> <!-- ./buttons -->
+                </form> <!-- /form -->
+                <button  class="fill" onclick="ListTable()">Click Here to Display</button>
+            </div> <!-- .contact-content -->
+            <div class="list-table">
+                <table style="width: 100%;">
+                    <caption style="margin-bottom: 20px; font-weight:700; text-transform: uppercase; font-size: 24px;">Personal Inforamtion</caption>
+                    <tbody id="table">
+                        <tr>
+                            <th>Name</th>
+                            <td id="td-name"></td>
+                        </tr>
+                        <tr>
+                            <th>ID</th>
+                            <td id="td-id"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td id="td-email"></td>
+                        </tr>
+                        <tr>
+                            <th>Department</th>
+                            <td id="td-depart"></td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td id="td-phone"></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td id="td-address"></td>
+                        </tr>
+                        <tr>
+                            <th>University</th>
+                            <td id="td-uni"></td>
+                        </tr>
+                        <tr>
+                            <th>City</th>
+                            <td id="td-city"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- ./list-table -->
+        </div> <!-- ./container -->
+    </section> <!-- ./contact -->
+
+    <!-- Tabular Format -->
+    <script>
+        function ListTable() {
+            var name = document.querySelector('#name').value;
+            var id = document.querySelector('#id').value;
+            var email = document.querySelector('#email').value;
+            var depart = document.querySelector('#department').value;
+            var phone = document.querySelector('#phone').value;
+            var address = document.querySelector('#address').value;
+            var uni = document.querySelector('#uni').value;
+            var city = document.querySelector('#city').value;
+            document.querySelector('#td-name').innerHTML = name;
+            document.querySelector('#td-id').innerHTML = id;
+            document.querySelector('#td-email').innerHTML = email;
+            document.querySelector('#td-depart').innerHTML = depart;
+            document.querySelector('#td-phone').innerHTML = phone;
+            document.querySelector('#td-address').innerHTML = address;
+            document.querySelector('#td-uni').innerHTML = uni;
+            document.querySelector('#td-city').innerHTML = city;
+            document.querySelector('.contact-content').setAttribute('style', 'display:none;');
+            document.querySelector('.list-table').setAttribute('style', 'display:block;');
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="padding-bottom: 80px;">
+        <div class="container">
+            <div class="contact-info">
+                <h3><i class="fa fa-address-book fa-lg"></i>&nbsp;&nbsp;&nbsp;Contact Me</h3>
+                <div class="contact-item">
+                    <i class="icon fa fa-home"></i>
+                    <strong>Gaza Strip, Palestine</strong>
+                    <p>Tal El-hawa Towers</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="tel:970-592-195200"><i class="icon fa fa-phone"></i></a>
+                    <a href="tel:+970-592-195200"><strong>+970-592-195200</strong></a>
+                    <p>Monday to Friday 9:AM to 6:PM</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="mailto:ahmedalasher22@gmail.com" target="_blank"><i class="icon fa fa-envelope"></i>
+                    </a>
+                    <a href="mailto:ahmedalasher22@gmail.com"
+                        target="_blank"><strong>ahmedalasher22@gmail.com</strong></a>
+                    <p>Send Me Your Query Anytime <i class="fa fa-smile-o"></i> !</p>
+                </div> <!-- ./contact-item -->
+            </div> <!-- ./contact-info -->
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Ahmed Alashi</h1>
+                    </a>
+                    <h4>follow me</h4>
+                </div> <!-- ./logo -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AHmEDAlAsHiii/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/ahmed_alashii" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ahmed_alashii/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/ahmedalashii" target="_blank"><i class="fa fa-github"></i></a>
+                </div> <!-- ./footer-social -->
+                <p>Copyright ©2020 All rights reserved | This Page is made with <i class="fa fa-heart"></i> by <a
+                        href="https://www.instagram.com/ahmed_alashii/" style="color: #854fee;" target="_blank">Ahmed
+                        Alashi</a></p>
+            </div> <!-- ./footer-content -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<html>
+<!-- This Website is Completely By Ahmed Alashi -->
+
+<head>
+    <title>Media</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="icon" href="https://www.shareicon.net/data/2015/09/18/642535_logo_512x512.png" />
+    <!-- English Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Arabic Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <!-- Style Embedded -->
+    <style>
+        /* General Styles */
+        .container {
+            width: 78%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Rubik', 'sans-serif';
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            border: 0;
+            padding: 13px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Roboto';
+            color: #777777;
+        }
+    </style>
+    <!-- Javascript File -->
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Ahmed Alashi</h1>
+                </a>
+            </div> <!-- ./logo -->
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a href="media.html" class="line active">
+                            <i class="fa fa-picture-o fa-lg"></i>&nbsp;
+                            Media Page
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html"><i class="fa fa-home fa-lg"></i>&nbsp; &nbsp;Home</a></li>
+                            <li><a href="cv.html"><i class="fa fa-wpforms fa-lg"></i>&nbsp; &nbsp;Cv-Form</a></li>
+                            <li><a href="code.html"><i class="fa fa-code fa-lg"></i>&nbsp; &nbsp;Code</a></li>
+                            <li><a href="quiz.html"><i class="fa fa-question-circle fa-lg"></i>&nbsp; &nbsp;Quiz</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- ./container -->
+    </header> <!-- /header -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- About Me Section -->
+    <section class="about-me">
+        <div class="container">
+            <div class="about-me-box">
+                <div class="about-me-content">
+                    <h2>Media Page</h2>
+                    <ul class="breadcrumb" style="padding: 15px 110px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li>Media Page</li>
+                    </ul> <!-- ./breadcrumb-->
+                </div> <!-- ./about-me-content -->
+            </div> <!-- ./about-me-box -->
+        </div> <!-- ./container -->
+    </section> <!-- ./about-me -->
+
+    <!-- Code Explanation -->
+    <div class="code-explan" style="display: none;">
+        <!-- JavaScript Description Section -->
+        <section class="js-description">
+            <div class="container">
+                <h3 class="line">JavaScript Code Description</h3>
+                <div class="js-content" style="margin-top: 40px;">
+                    <ol style="list-style: none;">
+                        <li><span>answerExtract() Function ( My Own Code ) : </span><span style="color: #854fee;">I used
+                                it in Quiz Page to Calculate The Score of Student/Your Answers.</span></li>
+                        <li><span>wlmSite() Function ( My Own Code ) : </span><span style="color: #854fee;">to Print The
+                                Score of Student Answers and his name and his ID and say Welcome <i
+                                    class="fa fa-smile-o"></i>.</span></li>
+                        <li><span>setStyle() Function ( My Own Code ) : </span><span style="color: #854fee;">to Change
+                                The Color of Student Answer and set it <span style="color: red;">Red</span> if it's
+                                Wrong ,and <span style="color: green;">Green</span> if it's Correct. </span></li>
+                        <li><span>disable() Function ( My Own Code ) : </span><span style="color: #854fee;">To disable
+                                the selection feature in the input tags and select tags with option tags when click on
+                                an any input or select any option.</span></li>
+                        <li><span>enable() Function ( My Own Code ) : </span><span style="color: #854fee;">To reactivate
+                                (enable) the selection feature in the input tags and select tags with option tags when
+                                click on Clear Button.</span></li>
+                        <li><span>Sticky Header Function ( Free Code | Embedded in All Pages) : </span><span
+                                style="color: #854fee;">To make the Header Sticky when you Scroll in The y-axis.</span>
+                        </li>
+                        <li><span>ListTable() Function ( My Own Code | Embedded in CV-FORM Page) : </span><span
+                                style="color: #854fee;">To Display Personal Information in Tabular Format.</span></li>
+                        <li><span>showCode() Function ( My Own Code ) : </span><span style="color: #854fee;">To Print
+                                Out The Code Page Content.</span></li>
+                    </ol>
+                </div> <!-- ./js-content -->
+                <hr class="section-hr">
+            </div> <!-- ./container -->
+        </section> <!-- ./js-description -->
+
+        <!-- CSS Styling Description Section -->
+        <section class="css-description" style="padding-bottom: 160px;">
+            <div class="container">
+                <h3 class="line">CSS Styling Code Description</h3>
+                <div class="css-content" style="margin-top: 40px;">
+                    <h5><span style="color: red;">Note : </span> All Css Styles are My Own Codes and I didn't use
+                        bootsrap framwework.</h5>
+                    <ol style="list-style: none;">
+                        <li><span>Font Awesome ( is a Free Web Font Containing most icons ) : </span><span
+                                style="color: #854fee;">I included it as a css File and I used its icons.</span></li>
+                        <li><span>Vednor prefixes : </span><span style="color: #854fee;">I used them because Some
+                                browsers don't support some features or some properties.</span></li>
+                        <li><span>Psuedo Elements and Psuedo Classes : </span><span style="color: #854fee;">I used after
+                                and before psuedo elements, For Example each line under h3 heading is performed by after
+                                psuedo element , and also hover is a psuedo class.</span></li>
+                        <li><span>Embedded and External and Internal Style : </span><span style="color: #854fee;">I used
+                                all of them , General Styles are Embedded and in External Css File.</span></li>
+                    </ol>
+                </div> <!-- ./css-content -->
+            </div> <!-- ./container -->
+        </section> <!-- ./css-description -->
+    </div> <!-- ./code-explan -->
+
+    <!-- Code Page Content Section -->
+    <div style="text-align: center; padding-top: 30px;" class="container">
+        <button class="fill" id="show-content" onclick="showCode()">Click Here to Print Out Code Page Content</button>
+        <hr class="section-hr">
+    </div> <!-- ./container -->
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-title">
+                <h2 class="line">Quality Work<br>Recently Done Manuscripts</h2>
+            </div> <!-- ./portolfio-title -->
+            <div class="portfolio-content" style="margin-top: 60px;">
+                <div class="portfolio-item" style="margin-top: 50px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p1.jpg" alt="Portfolio 1 !" draggable="false">
+                        <a href="images/portfolio/p1.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p1.jpeg">ثم ان لطفه يجري وعبده لا يدري</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p2.jpg" alt="Portfolio 2 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p2.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p2.jpg">الطيور التي تولد في القفص تعتقد أن الطيران
+                                جريمة</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item" style="margin-top: 15px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p3.jpg" alt="Portfolio 3 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p3.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p3.jpeg">"يدبّرُ الأمرَ"</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+            </div> <!-- ./portfolio-content -->
+            <div class="portfolio-content">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p4.jpeg" alt="Portfolio 4 !" draggable="false">
+                        <a href="images/portfolio/p4.jpeg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p4.jpeg">الطيور التي تولد في القفص تعتقد أن الطيران
+                                جريمة</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item" style="margin-top: 25px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p5.jpg" alt="Portfolio 5 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p5.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p5.jpg">ونحن لم نحلُمَ بأكثر من حياةٍ .. كالحياة
+                            </a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item" style="margin-top:10px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p6.jpg" alt="Portfolio 6 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p6.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p6.jpg">"وما بكم من نعمةٍ فمن اللَّه" </a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+            </div> <!-- ./portfolio-content -->
+            <div class="portfolio-content">
+                <div class="portfolio-item" style="margin-top: 15px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p7.jpg" alt="Portfolio 7 !" draggable="false">
+                        <a href="images/portfolio/p7.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p7.jpg">اليأس شيمةُ العاجز</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item" style="margin-top: 25px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p8.jpg" alt="Portfolio 8 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p8.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p8.jpg">والعسرُ مهما قسى فاليسر يتبعه</a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+                <div class="portfolio-item" style="margin-top: 15px;">
+                    <div class="portfolio-item-photo bg-overlay">
+                        <img src="images/portfolio/p9.jpg" alt="Portfolio 9 !" draggable="false" class="bg-overlay">
+                        <a href="images/portfolio/p9.jpg"><i class="icon fa fa-plus"></i></a>
+                    </div> <!-- ./portfolio-item-photo -->
+                    <div class="portfolio-item-info">
+                        <h4 class="arabic"><a href="images/portfolio/p9.jpg">كُن كلّ شيء , عدا أن تكون خيبة </a></h4>
+                    </div> <!-- ./portfolio-item-info -->
+                </div> <!-- ./portfolio-item -->
+            </div> <!-- ./portfolio-content -->
+            <p style="text-align: center; text-transform: uppercase; font-weight: 600;"><span style="color: red;">Note :
+                </span>My
+                Manuscripts are additional.</p>
+            <p style="text-align: center; text-transform: uppercase; font-weight:600;">For More <span style="color:red">Manuscripts</span> , Follow me On Instagram :   <a class="follow-instagram" href="https://www.instagram.com/ahmed_alashii/" target="_blank"><i
+                class="fa fa-instagram"></i></a></p>
+            <hr class="section-hr">
+        </div> <!-- ./container -->
+    </section> <!-- ./portfolio -->
+
+    <!-- My Favourite Videos Section -->
+    <section class="f-video" style="padding-bottom: 160px;">
+        <div class="container">
+            <div class="f-video-content">
+                <div class="f-videos-title">
+                    <h3 class="line">These are my <br>Favourite videos List</h3>
+                </div> <!-- ./f-video-title -->
+                <div class="f-video-item" style="margin-right: 40px;">
+                    <iframe src="https://www.youtube.com/embed/GiFlOvsWocA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> <!-- ./f-video-item -->
+                <div class="f-video-item">
+                    <iframe src="https://www.youtube.com/embed/V1qXPnWDyRI" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> <!-- ./f-video-item -->
+                <div class="f-video-item" style="margin-right: 40px;">
+                    <iframe src="https://www.youtube.com/embed/Ep6qGEP4Rqg" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> <!-- ./f-video-item -->
+                <div class="f-video-item">
+                    <iframe src="https://www.youtube.com/embed/HvwTNp-lXoA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div> <!-- ./f-video-item -->
+            </div> <!-- ./f-video-content -->
+        </div> <!-- ./container -->
+    </section> <!-- ./f-video pd-y -->
+
+    <!-- Footer Section -->
+    <footer class="footer" style="padding-bottom: 80px;">
+        <div class="container">
+            <div class="contact-info">
+                <h3><i class="fa fa-address-book fa-lg"></i>&nbsp;&nbsp;&nbsp;Contact Me</h3>
+                <div class="contact-item">
+                    <i class="icon fa fa-home"></i>
+                    <strong>Gaza Strip, Palestine</strong>
+                    <p>Tal El-hawa Towers</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="tel:970-592-195200"><i class="icon fa fa-phone"></i></a>
+                    <a href="tel:+970-592-195200"><strong>+970-592-195200</strong></a>
+                    <p>Monday to Friday 9:AM to 6:PM</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="mailto:ahmedalasher22@gmail.com" target="_blank"><i class="icon fa fa-envelope"></i>
+                    </a>
+                    <a href="mailto:ahmedalasher22@gmail.com"
+                        target="_blank"><strong>ahmedalasher22@gmail.com</strong></a>
+                    <p>Send Me Your Query Anytime <i class="fa fa-smile-o"></i> !</p>
+                </div> <!-- ./contact-item -->
+            </div> <!-- ./contact-info -->
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Ahmed Alashi</h1>
+                    </a>
+                    <h4>follow me</h4>
+                </div> <!-- ./logo -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AHmEDAlAsHiii/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/ahmed_alashii" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ahmed_alashii/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/ahmedalashii" target="_blank"><i class="fa fa-github"></i></a>
+                </div> <!-- ./footer-social -->
+                <p>Copyright ©2020 All rights reserved | This Cover Page is made with <i class="fa fa-heart"></i> by <a
+                        href="https://www.instagram.com/ahmed_alashii/" style="color: #854fee;" target="_blank">Ahmed
+                        Alashi</a></p>
+            </div> <!-- ./footer-content -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->
+</body>
+
+</html>

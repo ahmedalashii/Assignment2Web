@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>AHmED AlAsHi - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.shareicon.net/data/2015/09/18/642535_logo_512x512.png" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Css Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <!-- Style Embedded-->
+    <style>
+        /* General Styles */
+        .container {
+            width: 78%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Rubik', 'sans-serif';
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            outline: none;
+            border: 0;
+            padding: 13px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Roboto';
+            color: #777777;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Ahmed Alashi</h1>
+                </a>
+            </div> <!-- ./logo -->
+            <nav class="nav">
+                <ul>
+                    <li class="dropdown"><a href="index.html" class="line active">
+                        <i class="fa fa-home fa-lg"></i>&nbsp;
+                        Home
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="cv.html"><i class="fa fa-wpforms fa-lg"></i>&nbsp; &nbsp;
+                                CV-Form</a></li>
+                            <li><a href="code.html"><i class="fa fa-code fa-lg"></i>&nbsp; &nbsp;Code</a></li>
+                            <li><a href="quiz.html"><i class="fa fa-question-circle fa-lg"></i>&nbsp; &nbsp;Quiz</a></li>
+                            <li><a href="media.html"><i class="fa fa-picture-o fa-lg"></i>&nbsp;&nbsp;Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- ./container -->
+    </header> <!-- /header -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <!-- Home Section -->
+    <section class="home pd-y" id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-content-description">
+                    <h3>Hello</h3>
+                    <h1>I AM AHMED ALASHI</h1>
+                    <h2>a Student Software Developer</h2>
+                    <a href="quiz.html"><button class="fill">Let's Quiz</button></a>
+                    <a href="cv.html"><button class="border">Get Cv-Form</button></a>
+                </div> <!-- ./home-content-description -->
+                <div class="home-content-photo">
+                    <img src="images/background/home-right.png" alt="This is Me !" draggable="false">
+                </div> <!-- ./home-content-description -->
+            </div> <!-- ./home-content -->
+        </div>
+    </section> <!-- ./home -->
+
+    <!-- About Section -->
+    <section class="about pd-y">
+        <div class="container">
+            <div class="introduce">
+                <div class="introduce-left">
+                    <img src="images/about/about-me.png" alt="About Us !" draggable="false">
+                </div> <!-- ./introduce-left -->
+                <div class="introduce-right">
+                    <h2>
+                        Let's
+                        <br>
+                        Introduce About
+                        <br>
+                        Myself
+                    </h2>
+                    <p>Hello, My name is Ahmed Alashi <i class="fa fa-smile-o"></i> , I'm
+                        around 20 Years Old. I grew up in Gaza Strip I Live With My Family in Tal-Elhawa Towers , I
+                        really Love Calligraphy and it's My Hobby! </p>
+                    <p>I’m studying Software Development at Islamic University of Gaza and I do enjoy it, most aspects
+                        of it. But in this second year there is a lot of hard work and a lot of reading, and I cannot
+                        say that I enjoy all of this reading. But what I really enjoy is working on Web Programming.
+                        What I mean is Build Websites. I like to exchange ideas with people about this filed.</p>
+                    <a href="cv.html"> <button class="fill">GET CV-Form</button></a>
+                </div> <!-- ./introduce-right-->
+            </div> <!-- ./introduce -->
+        </div> <!-- ./conatiner -->
+    </section> <!-- ./about -->
+
+
+    <!-- Footer Section -->
+    <footer class="footer" style="padding-bottom: 80px;">
+        <div class="container">
+            <div class="contact-info">
+                <h3><i class="fa fa-address-book fa-lg"></i>&nbsp;&nbsp;&nbsp;Contact Me</h3>
+                <div class="contact-item">
+                    <i class="icon fa fa-home"></i>
+                    <strong>Gaza Strip, Palestine</strong>
+                    <p>Tal El-hawa Towers</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href=tel:970-592-195200><i class="icon fa fa-phone"></i></a>
+                    <a href="tel:+970-592-195200"><strong>+970-592-195200</strong></a>
+                    <p>Monday to Friday 9:AM to 6:PM</p>
+                </div> <!-- ./contact-item -->
+                <div class="contact-item">
+                    <a href="mailto:ahmedalasher22@gmail.com" target="_blank"><i class="icon fa fa-envelope"></i>
+                    </a>
+                    <a href="mailto:ahmedalasher22@gmail.com"
+                        target="_blank"><strong>ahmedalasher22@gmail.com</strong></a>
+                    <p>Send Me Your Query Anytime <i class="fa fa-smile-o"></i> !</p>
+                </div> <!-- ./contact-item -->
+            </div> <!-- ./contact-info -->
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Ahmed Alashi</h1>
+                    </a>
+                    <h4>follow me</h4>
+                </div> <!-- ./logo -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AHmEDAlAsHiii/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/ahmed_alashii" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ahmed_alashii/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/ahmedalashii" target="_blank"><i class="fa fa-github"></i></a>
+                </div> <!-- ./footer-social -->
+                <p>Copyright ©2020 All rights reserved | This Page is made with <i class="fa fa-heart"></i> by <a
+                        href="https://www.instagram.com/ahmed_alashii/" style="color: #854fee;" target="_blank">Ahmed
+                        Alashi</a></p>
+            </div> <!-- ./footer-content -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->
+</body>
+
+</html>
